@@ -1,7 +1,7 @@
 package com.ttknpdev.crud.springbootjdbccrudposgresql.business;
 
 import com.ttknpdev.crud.springbootjdbccrudposgresql.model.Book;
-import com.ttknpdev.crud.springbootjdbccrudposgresql.repository.BookRepositories;
+import com.ttknpdev.crud.springbootjdbccrudposgresql.repository.BookRepository;
 import com.ttknpdev.crud.springbootjdbccrudposgresql.service.BookService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ import java.time.LocalDate;
 @Rollback(value = false)
 public class MyBusiness {
 
-    private BookRepositories bookService;
+    private BookRepository bookService;
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @Autowired
